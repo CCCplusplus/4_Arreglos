@@ -3,7 +3,8 @@
 #include <iostream>
 #include <Windows.h>
 #include <iomanip>
-
+#include "Array.h"
+//Tarea hacer una clase de array que utilice char.
 int main()
 {
     //decirle a windoes que queremos characteres em UTF8
@@ -54,6 +55,22 @@ int main()
             emojibytes[3] += 1;
         }
         std::cout << "\n";
+    }
+
+    //Seccion pruebas de clase Array
+    Array* arreglodegatos = new Array(9);
+
+    std::cout << "size of uint32: " << sizeof(unit32) << "\n";
+    std::cout << "Arreglo de uint32" << "\n";
+
+   // std::cout << "\xf0\x9f\x90\x88" << "\n";
+
+    arreglodegatos->Clear();
+
+    //arreglodegatos->Set(5, static_cast<unit32>("\xf0\x9f\x90\x88"));
+    for (int i = 0; i < arreglodegatos->Size(); i++) 
+    {
+        std::cout << arreglodegatos->Get(i) << "\n";
     }
 }
 
