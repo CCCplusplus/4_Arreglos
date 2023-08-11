@@ -4,6 +4,7 @@
 #include <Windows.h>
 #include <iomanip>
 #include "Array.h"
+#include "ArrayChar.h"
 //Tarea hacer una clase de array que utilice char.
 int main()
 {
@@ -69,6 +70,17 @@ int main()
 
     //arreglodegatos->Set(5, static_cast<unit32>("\xf0\x9f\x90\x88"));
     for (int i = 0; i < arreglodegatos->Size(); i++) 
+    {
+        std::cout << arreglodegatos->Get(i) << "\n";
+    }
+
+    ArrayChar* arreglodechars = new ArrayChar(6);
+    std::cout << "size of char: " << sizeof(char) << "\n";
+    std::cout << "Arreglo de char" << "\n";
+
+    arreglodechars->Clear();
+
+    for (int i = 0; i < arreglodechars->Size(); i++)
     {
         std::cout << arreglodegatos->Get(i) << "\n";
     }

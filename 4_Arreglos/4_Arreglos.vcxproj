@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="4_Arreglos.cpp" />
     <ClCompile Include="Array.cpp" />
+    <ClCompile Include="ArrayChar.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
+    <ClInclude Include="ArrayChar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
