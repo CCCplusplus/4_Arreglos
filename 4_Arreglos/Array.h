@@ -17,9 +17,13 @@ public:
 
 	~Array();
 
+	unit32 operator[](size_t index);
+
 	unit32 Get(size_t index);
 
 	void Set(size_t index, unit32 newvalue);
+
+	void Set(size_t index, const char* bytes);
 
 	size_t Size();
 
